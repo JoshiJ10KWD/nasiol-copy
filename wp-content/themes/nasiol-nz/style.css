@@ -1,0 +1,3897 @@
+/*!
+Theme Name: Nasiol NZ
+Theme URI: http://underscores.me/
+Author: Babar Ilyas
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: nasiol-nz
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Nasiol NZ is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@font-face {
+	font-family: 'Avenir Black';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Black.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir Book';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Book.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir Heavy';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Heavy.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir Light';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Light.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir Medium';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Avenir Regular';
+	src: url(../../../wp-content/themes/nasiol-nz/assets/fonts/Avenir\ Regular.ttf);
+}
+
+
+
+
+
+/* Button START */
+.btnn {
+	padding-left: 67px;
+	padding-right: 53px;
+	padding-top: 13px;
+	padding-bottom: 14px;
+	background-color: #3D3D3D;
+	color: #fff;
+	font-family: 'Avenir Medium';
+	font-size: 16px;
+	position: relative;
+	transition: 0.7s;
+}
+
+.btnn:before {
+	content: '';
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4600.svg);
+	height: 13px;
+	width: 13px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-470%, -50%);
+	transition: 0.7s;
+	z-index: 2;
+}
+
+.btnn span {
+	position: relative;
+	z-index: 3;
+}
+
+.btnn:after {
+	content: '';
+	height: 100%;
+	width: 3%;
+	position: absolute;
+	background-color: #fff;
+	top: 0px;
+	right: 0px;
+	transition: 0.7s;
+}
+
+.btnn:visited {
+	color: #fff;
+}
+
+.btnn:hover {
+	color: #000;
+}
+
+.btnn:hover:before {
+	transform: translate(-500%, -50%) rotate(360deg);
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4601.svg);
+}
+
+.btnn:hover:after {
+	width: 100%;
+}
+/* Button END */
+
+
+
+/* Black Button START */
+.btnn__black {
+	padding-left: 67px;
+	padding-right: 53px;
+	padding-top: 13px;
+	padding-bottom: 14px;
+	background-color: #3D3D3D;
+	color: #fff;
+	font-family: 'Avenir Medium';
+	font-size: 16px;
+	position: relative;
+	transition: 0.7s;
+}
+
+.btnn__black:before {
+	content: '';
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4600.svg);
+	height: 13px;
+	width: 13px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-470%, -50%);
+	transition: 0.7s;
+	z-index: 2;
+}
+
+.btnn__black span {
+	position: relative;
+	z-index: 3;
+}
+
+.btnn__black:after {
+	content: '';
+	height: 100%;
+	width: 3%;
+	position: absolute;
+	background-color: #000;
+	top: 0px;
+	right: 0px;
+	transition: 0.7s;
+}
+
+.btnn__black:visited {
+	color: #fff;
+}
+
+.btnn__black:focus {
+	color: #fff;
+}
+
+.btnn__black:hover {
+	color: #fff;
+}
+
+.btnn__black:hover:before {
+	transform: translate(-500%, -50%) rotate(360deg);
+}
+
+.btnn__black:hover:after {
+	width: 100%;
+}
+/* BLACK BUTTON END */
+
+
+
+/* WHITE BUTTON START */
+.btnn__white {
+	padding-left: 67px;
+	padding-right: 53px;
+	padding-top: 13px;
+	padding-bottom: 14px;
+	background-color: transparent;
+	color: #000;
+	font-family: 'Avenir Medium';
+	font-size: 16px;
+	position: relative;
+	transition: 0.7s;
+	border: 1px solid #000;
+}
+
+.btnn__white:before {
+	content: '';
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4601.svg);
+	height: 13px;
+	width: 13px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-470%, -50%);
+	transition: 0.7s;
+	z-index: 2;
+}
+
+.btnn__white span {
+	position: relative;
+	z-index: 3;
+}
+
+.btnn__white:after {
+	content: '';
+	height: 100%;
+	width: 3%;
+	position: absolute;
+	background-color: #000;
+	top: 0px;
+	right: 0px;
+	transition: 0.7s;
+}
+
+.btnn__white:visited {
+	color: #000;
+}
+
+.btnn__white:hover {
+	color: #fff;
+}
+
+.btnn__white:hover:before {
+	transform: translate(-500%, -50%) rotate(360deg);
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4600.svg);
+}
+
+.btnn__white:hover:after {
+	width: 100%;
+}
+/* WHITE BUTTON END */
+
+
+
+
+.btnn__lg:before {
+	transform: translate(-650%, -50%);
+}
+
+.btnn__lg:hover:before {
+	transform: translate(-650%, -50%) rotate(360deg);
+}
+
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+	 ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	margin-bottom: 0px !important;
+	overflow-x: hidden !important;
+}
+
+/* Sections
+	 ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+	margin: 0;
+	margin-bottom: 0px !important;
+	overflow-x: hidden !important;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+	display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+	background-color: transparent;
+	outline: none !important;
+	text-decoration: none !important;
+}
+
+a:visited {
+	color: unset;
+}
+
+a:focus {
+	color: unset;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+	border-bottom: none;
+	text-decoration: underline;
+	text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+	font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sub {
+	bottom: -0.25em;
+}
+
+sup {
+	top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+	border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+	overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+	padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+	box-sizing: border-box;
+	color: inherit;
+	display: table;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+	vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+	overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+	box-sizing: border-box;
+	padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+	display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+	display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+	display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+	display: none;
+}
+
+/* Box sizing
+--------------------------------------------- */
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+
+/* Typography
+--------------------------------------------- */
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: #404040;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+}
+
+p {
+	margin-bottom: 1.5em;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", courier, monospace;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+code,
+kbd,
+tt,
+var {
+	font-family: monaco, consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+abbr,
+acronym {
+	border-bottom: 1px dotted #666;
+	cursor: help;
+}
+
+mark,
+ins {
+	background: #fff9c0;
+	text-decoration: none;
+}
+
+big {
+	font-size: 125%;
+}
+
+/* Elements
+--------------------------------------------- */
+body {
+	background: #fff;
+}
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+figure {
+	margin: 1em 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+/* Links
+--------------------------------------------- */
+a {
+	color: #4169e1;
+}
+
+a:visited {
+	color: #800080;
+}
+
+a:hover,
+a:focus,
+a:active {
+	color: #191970;
+}
+
+a:focus {
+	outline: thin dotted;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/* Forms
+--------------------------------------------- */
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid;
+	border-color: #ccc #ccc #bbb;
+	border-radius: 3px;
+	background: #e6e6e6;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 1;
+	padding: 0.6em 1em 0.4em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+	border-color: #ccc #bbb #aaa;
+}
+
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+	border-color: #aaa #bbb #bbb;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: #666;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	padding: 3px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: #111;
+}
+
+select {
+	border: 1px solid #ccc;
+}
+
+textarea {
+	width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Navigation
+--------------------------------------------- */
+.main-navigation {
+	display: block;
+	width: 100%;
+}
+
+.main-navigation ul {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.main-navigation ul ul {
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	float: left;
+	position: absolute;
+	top: 100%;
+	left: -999em;
+	z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+	left: -999em;
+	top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+	display: block;
+	left: auto;
+}
+
+.main-navigation ul ul a {
+	width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+	left: auto;
+}
+
+.main-navigation li {
+	position: relative;
+}
+
+.main-navigation a {
+	display: block;
+	text-decoration: none;
+}
+
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+
+	.menu-toggle {
+		display: none;
+	}
+
+	.main-navigation ul {
+		display: flex;
+	}
+}
+
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
+.post-navigation {
+	margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+	display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+	flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	text-align: end;
+	flex: 1 0 50%;
+}
+
+/* Posts and pages
+--------------------------------------------- */
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/* Comments
+--------------------------------------------- */
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/* Widgets
+--------------------------------------------- */
+.widget {
+	margin: 0 0 1.5em;
+}
+
+.widget select {
+	max-width: 100%;
+}
+
+/* Media
+--------------------------------------------- */
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure logo link wraps around logo image. */
+.custom-logo-link {
+	display: inline-block;
+}
+
+/* Captions
+--------------------------------------------- */
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/* Galleries
+--------------------------------------------- */
+.gallery {
+	margin-bottom: 1.5em;
+	display: grid;
+	grid-gap: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+}
+
+.gallery-columns-2 {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-columns-3 {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-columns-4 {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.gallery-columns-5 {
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.gallery-columns-6 {
+	grid-template-columns: repeat(6, 1fr);
+}
+
+.gallery-columns-7 {
+	grid-template-columns: repeat(7, 1fr);
+}
+
+.gallery-columns-8 {
+	grid-template-columns: repeat(8, 1fr);
+}
+
+.gallery-columns-9 {
+	grid-template-columns: repeat(9, 1fr);
+}
+
+.gallery-caption {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
+/* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+	display: none;
+}
+
+/* Re-display the Theme Footer when Infinite Scroll has reached its end. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 0.875rem;
+	font-weight: 700;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#primary[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/* Alignments
+--------------------------------------------- */
+.alignleft {
+
+	/*rtl:ignore*/
+	float: left;
+
+	/*rtl:ignore*/
+	margin-right: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.alignright {
+
+	/*rtl:ignore*/
+	float: right;
+
+	/*rtl:ignore*/
+	margin-left: 1.5em;
+	margin-bottom: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1.5em;
+}
+
+
+/* FOOTER START */
+#colophon {
+	background-color: #1B1B1B;
+	padding-bottom: 39.7px;
+	padding-top: 69px;
+	clear: both;
+	overflow: hidden;
+}
+
+#colophon .container {
+	background-image: url('../../../wp-content/themes/nasiol-nz/assets/img/01.jpg');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-size: 35%;
+}
+
+#footer_bar {
+	background-color: #000000;
+	padding-top: 22px;
+	padding-bottom: 22px;
+}
+
+#footer_bar p {
+	margin: 0px;
+}
+
+#footer_bar .content_con {
+	display: flex;
+	justify-content: space-between;
+}
+
+#footer_bar .content_con .left_con p {
+	color: #C1C1C1;
+	font-family: 'Avenir Regular';
+	font-size: 12px;
+}
+
+#footer_bar .content_con .right_con {
+	display: flex;
+}
+
+#footer_bar .content_con .right_con p {
+	color: #C1C1C1;
+	margin-right: 11.9px;
+	font-family: 'Avenir Regular';
+	font-size: 12px;
+}
+
+#footer_bar .content_con .right_con a {
+	display: flex;
+}
+
+#colophon .left_con_top h6 {
+	font-family: 'Avenir Heavy';
+	line-height: 51px;
+	font-size: 36px;
+	max-width: 606px;
+	color: #fff;
+}
+
+#colophon .footer_form_con input {
+	padding: 14px;
+	background-color: #2A2A2A;
+	border: none;
+	margin-bottom: 14px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Avenir Light';
+	color: #8F8F8F;
+	outline: none;
+	border-radius: 0px;
+}
+
+#colophon .footer_form_con textarea {
+	max-height: 94px;
+	background-color: #2A2A2A;
+	padding: 14px;
+	border: none;
+	font-family: 'Avenir Light';
+	color: #8F8F8F;
+	font-size: 16px;
+	width: 100%;
+	margin-bottom: 26px;
+	outline: none;
+	border-radius: 0px;
+}
+
+#colophon .footer_form_con .wpcf7-not-valid-tip {
+	font-family: 'Avenir Light';
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+#colophon .footer_form_con input[type="submit"] {
+	padding: 12px 30px;
+	background-color: #1B1B1B;
+	border: 1px solid #fff;
+	max-width: fit-content;
+	border-radius: 0px;
+	color: #fff;
+	text-transform: capitalize;
+	font-family: 'Avenir Medium';
+	font-size: 16px;
+	transition: 0.7s;
+	line-height: normal;
+}
+
+#colophon .footer_form_con input[type="submit"]:hover {
+	background-color: #fff;
+	color: #1B1B1B;
+	border-color: #1B1B1B;
+}
+
+#colophon .footer_form_con {
+	margin-bottom: 49px;
+}
+
+#colophon .column_1 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+#colophon .column_1 a {
+	width: 100%;
+}
+
+#colophon .column_1 img {
+	width: 100%;
+}
+
+#colophon .column_2 {
+	display: flex;
+	height: 100%;
+	/* align-items: center; */
+	justify-content: center;
+}
+
+#colophon .column_2 ul {
+	padding: 0px;
+	list-style: none;
+	margin: 0px;
+}
+
+#colophon .column_2 ul li a {
+	color: #7A7A7B;
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	font-size: 14px;
+}
+
+#colophon .column_2 ul li a:hover {
+	color: #fff;
+}
+
+#colophon .column_3 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	margin-left: 30px;
+	/* align-items: center; */
+	/* justify-content: center; */
+	flex-direction: column;
+}
+
+#colophon .column_3 ul {
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+#colophon .column_3 .menu__items {
+	margin-bottom: 18px;
+}
+
+#colophon .column_3 .menu__items ul li a {
+	color: #7A7A7B;
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	font-size: 14px;
+}
+
+#colophon .column_3 .menu__items ul li a:hover {
+	color: #fff;
+}
+
+#colophon .column_3 .social_media_links ul {
+	display: flex;
+}
+
+#colophon .column_3 .social_media_links ul li {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#colophon .column_3 .social_media_links ul img {
+	transform: rotate(90deg);
+	transition: 0.7s;
+}
+
+#colophon .column_3 .social_media_links ul img:hover {
+	transform: scale(1.4) rotate(90deg);
+}
+
+#colophon .column_4 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	/* justify-content: center; */
+	/* align-items: center; */
+	flex-direction: column;
+}
+
+#colophon .column_4 .location p {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+	font-size: 14px;
+	margin-bottom: 19px;
+}
+
+#colophon .column_4 .email a {
+	color: #7A7A7B;
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	font-size: 14px;
+}
+
+#colophon .column_4 .email a:hover {
+	color: #fff;
+}
+
+#colophon .column_4 .phone a {
+	color: #7A7A7B;
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	font-size: 14px;
+}
+
+#colophon .column_4 .phone a:hover {
+	color: #fff;
+}
+/* FOOTER END */
+
+/* HOMEPAGE START */
+#home_banner {
+	box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 85%);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 170px;
+}
+
+#home_banner .left_con {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#home_banner .left_con h6 {
+	color: #fff;
+	font-size: 28px;
+	font-family: 'Avenir Black';
+}
+
+#home_banner .left_con h1 {
+	color: #fff;
+	font-size: 51px;
+	font-family: 'Avenir Black';
+	margin-bottom: 96px;
+}
+
+#home_banner .left_con .bottom_con {
+	display: flex;
+	align-items: center;
+}
+
+#home_banner .left_con .bottom_con .btnn {
+	margin-right: 43px;
+}
+
+#home_banner .left_con .bottom_con .right img {
+	margin-right: 11px;
+	transition: 0.7s;
+}
+
+#home_banner .left_con .bottom_con .right img:hover {
+	transform: scale(1.1);
+}
+
+#home_banner .left_con .bottom_con .right {
+	display: flex;
+}
+
+#home_banner .left_con .bottom_con .right a {
+	display: block;
+}
+
+#home_banner .left_con .bottom_con .right span {
+	/* max-width: 107px; */
+	font-family: 'Avenir Medium';
+	color: #fff;
+	font-size: 16px;
+}
+
+#home_banner .right_con {
+	text-align: center;
+}
+
+#home_banner .right_con img {
+	max-height: 580px;
+}
+
+#follow_us {
+	background-color: #000;
+}
+
+#follow_us .content_con {
+	display: flex;
+	justify-content: flex-end;
+	padding-top: 20px;
+	padding-bottom: 21px;
+	align-items: center;
+}
+
+#follow_us .content_con span {
+	color: #fff;
+	font-family: 'Avenir Medium';
+	font-size: 17px;
+	margin-right: 6px;
+}
+
+#follow_us .content_con .dash {
+	width: 12px;
+	height: 1px;
+	background-color: #fff;
+}
+
+#follow_us .content_con a {
+	display: flex;
+	margin-left: 9.7px;
+}
+
+#follow_us .content_con a img {
+	transition: 0.7s;
+}
+
+#follow_us .content_con a img:hover {
+	transform: scale(1.3);
+}
+
+#about_us {
+	padding-top: 62px;
+	padding-bottom: 100px;
+}
+
+#about_us .left_con {
+	position: relative;
+	height: 466px;
+}
+
+#about_us .left_con .top_left {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+#about_us .left_con .bottom_right {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+#about_us .col-sm-12:first-child {
+	padding-right: 38px;
+}
+
+#about_us .col-sm-12:last-child {
+	padding-left: 38px;
+}
+
+#about_us .right_con {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#about_us .right_con .title {
+	font-family: 'Avenir Black';
+	color: #000;
+	font-size: 47px;
+	margin-bottom: 6px;
+}
+
+#about_us .right_con .grey_line {
+	height: 2px;
+	width: 158px;
+	background-color: #7A7A7B;
+	margin-bottom: 16px;
+}
+
+#about_us .right_con .subtitle {
+	font-family: 'Avenir Regular';
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 35px;
+}
+
+#about_us .right_con .content {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	margin-bottom: 34px;
+}
+
+#about_us .right_con .content p {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	line-height: 26px;
+}
+
+#about_us .right_con .btnn__black {
+	width: max-content;
+}
+
+#area_of_expertise .left_box {
+	padding-right: 28px;
+	padding-bottom: 29px;
+	padding-left: 38px;
+	border-right: 1px solid #D9D9D9;
+	border-bottom: 1px solid #D9D9D9;
+	min-height: 250px;
+	padding-top: 74px;
+}
+
+#area_of_expertise .col-sm-12:first-child .left_box {
+	padding-top: 0px;
+}
+
+.padding_top_0 {
+	padding-top: 0px !important;
+}
+
+#area_of_expertise .right_box {
+	padding-right: 28px;
+	padding-bottom: 29px;
+	padding-left: 38px;
+	border-bottom: 1px solid #D9D9D9;
+	min-height: 250px;
+	padding-top: 74px;
+}
+
+#area_of_expertise .container .container .col-sm-12 {
+	padding: 0px;
+}
+
+#area_of_expertise .left_box .img_con {
+	max-height: 75px;
+}
+
+#area_of_expertise .right_box .img_con {
+	max-height: 75px;
+}
+
+#area_of_expertise .left_con h6 {
+	color: #000;
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	margin-bottom: 16px;
+	max-width: 212px;
+}
+
+#area_of_expertise .left_con p {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	margin-bottom: 65px;
+}
+
+#area_of_expertise .left_box .img_con {
+	position: relative;
+	max-width: 116px;
+	text-align: center;
+	margin-bottom: 15px;
+	height: 75px;
+}
+
+#area_of_expertise .left_box .img_con img {
+	z-index: 2;
+	position: relative;
+	transition: 0.7s;
+}
+
+#area_of_expertise .left_box:hover .img_con img {
+	transform: scale(1.06) translateY(-20px);
+}
+
+#area_of_expertise .right_box:hover .img_con img {
+	transform: scale(1.06) translateY(-20px);
+}
+
+#area_of_expertise .left_box .img_con svg {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10px);
+	transition: 0.7s;
+}
+
+#area_of_expertise .left_box .img_con svg path {
+	transition: 0.7s;
+}
+
+#area_of_expertise .right_box .img_con svg path {
+	transition: 0.7s;
+}
+
+#area_of_expertise .right_box .img_con {
+	position: relative;
+	max-width: 116px;
+	text-align: center;
+	margin-bottom: 15px;
+	height: 75px;
+}
+
+#area_of_expertise .right_box .img_con img {
+	z-index: 2;
+	position: relative;
+	transition: 0.7s;
+}
+
+#area_of_expertise .right_box .img_con svg {
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+    top: 50%;
+    transform: translate(-50%, 10px);
+	transition: 0.7s;
+}
+
+#area_of_expertise .left_box h6 {
+	font-family: 'Avenir Heavy';
+	font-size: 24px;
+	color: #202426;
+	margin-bottom: 5.1px;
+	transition: 0.7s;
+}
+
+#area_of_expertise .left_box p {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	margin-bottom: 0px;
+}
+
+#area_of_expertise .right_box h6 {
+	font-family: 'Avenir Heavy';
+	font-size: 24px;
+	color: #202426;
+	margin-bottom: 5.1px;
+	transition: 0.7s;
+}
+
+#area_of_expertise .right_box p {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	margin-bottom: 0px;
+}
+
+#area_of_expertise .left_box:hover .img_con svg path {
+	fill: #7A7A7B;
+}
+
+#area_of_expertise .right_box:hover .img_con svg path {
+	fill: #7A7A7B;
+}
+
+#area_of_expertise .left_box:hover {
+	cursor: pointer;
+}
+
+#area_of_expertise .right_box:hover {
+	cursor: pointer;
+}
+
+#area_of_expertise .left_box:hover .img_con h6 {
+	color: #000;
+}
+
+#area_of_expertise .right_box:hover .img_con h6 {
+	color: #000;
+}
+
+#three_col_sec {
+	padding-top: 101px;
+	overflow: hidden;
+}
+
+#three_col_sec .container-fluid {
+	padding: 0px;
+}
+
+#three_col_sec .container-fluid .col-sm-12 {
+	padding: 0px;
+	display: flex;
+    align-items: flex-end;
+	overflow: hidden;
+}
+
+#three_col_sec .box_con {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	height: 90%;
+	transition: 0.7s;
+	padding-top: 297px;
+	padding-bottom: 130px;
+	text-align: center;
+	width: 100%;
+	box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 16%);
+}
+
+#three_col_sec .box_con h6 {
+	font-family: 'Avenir Heavy';
+	color: #fff;
+	font-size: 33px;
+	margin-bottom: 30px;
+	transition: 0.7s;
+	transform: translateY(120px);
+}
+
+#three_col_sec .box_con .btnn {
+	transform: translateY(125px);
+	display: block;
+    width: fit-content;
+    margin: auto;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#three_col_sec .box_con:hover {
+	cursor: pointer;
+	height: 100%;
+	box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 36%);
+}
+
+#three_col_sec .box_con:hover h6 {
+	transform: translateY(30px);
+}
+
+#three_col_sec .box_con:hover .btnn {
+	transform: translateY(40px);
+	opacity: 1;
+	visibility: visible;
+}
+
+#industrial_solutions {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 187px;
+	padding-bottom: 170px;
+	text-align: center;
+	background-attachment: fixed;
+}
+
+#industrial_solutions .content_con img {
+	margin-bottom: 16px;
+	transition: 0.7s;
+}
+
+#industrial_solutions .content_con img:hover {
+	transform: scale(1.1);
+}
+
+#industrial_solutions .content_con h6 {
+	font-family: 'Avenir Heavy';
+	color: #fff;
+	font-size: 33px;
+	margin-bottom: 0px;
+}
+
+#industrial_solutions .content_con p {
+	font-family: 'Avenir Regular';
+	color: #fff;
+	font-size: 19px;
+	margin-bottom: 0px;
+}
+
+#industrial_solutions .btn-check:focus+.btn-primary, .btn-primary:focus {
+	background-color: transparent !important;
+	border-color: none !important;
+	box-shadow: none !important;
+}
+
+#industrial_solutions .btn-primary {
+	background-color: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+#catalogs {
+	overflow: hidden;
+}
+
+#catalogs .container-fluid {
+	padding: 0px;
+}
+
+#catalogs .container-fluid .col-sm-12 {
+	padding: 0px;
+}
+
+#catalogs .img_con {
+	width: 100%;
+}
+
+#catalogs .img_con img {
+	width: 100%;
+	/* object-fit: cover; */
+}
+
+#catalogs .tabs_con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	padding-left: 89px;
+	padding-right: 89px;
+	background-color: #1B1B1B;
+}
+
+#catalogs .tabs_con ul {
+	margin: 0px;
+	margin-bottom: 69px;
+}
+
+#catalogs .tabs_con ul li {
+	position: relative;
+	z-index: 2;
+}
+
+#catalogs .tabs_con ul li:first-child {
+	margin-right: 65px;
+}
+
+#catalogs .tabs_con ul li button {
+	position: relative;
+	z-index: 2;
+	background: transparent;
+	border: none;
+	transition: 0.7s;
+}
+
+#catalogs .tabs_con ul li span {
+	position: relative;
+	z-index: 2;
+	color: #D9D9D9;
+	font-family: 'Avenir Medium';
+	transition: 0.7s;
+	font-size: 18px;
+}
+
+#catalogs .tabs_con ul li button:hover img {
+	transform: translate(-50%, 20%);
+}
+
+#catalogs .tabs_con ul li .active span {
+	font-family: 'Avenir Black';
+	color: #fff;
+}
+
+#catalogs .tabs_con ul li img {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, 5%);
+	opacity: 0;
+	transition: 0.7s;
+}
+
+#catalogs .tabs_con ul li .active img {
+	opacity: 1;
+}
+
+#catalogs .tabs_con .tab-content h6 {
+	color: #fff;
+	font-family: 'Avenir Black';
+	/* max-width: 340px; */
+	font-size: 47px;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+
+#catalogs .tabs_con .tab-content p {
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	margin-bottom: 91px;
+	line-height: 26px;
+}
+
+#brands_worked_with {
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
+#brands_worked_with .left_con h6 {
+	font-family: 'Avenir Black';
+	color: #3D3D3D;
+	font-size: 47px;
+	max-width: 320px;
+}
+
+#brands_worked_with .slider_main_con .imgs_con {
+	display: flex;
+}
+
+#brands_worked_with .slider_main_con .imgs_con img {
+	margin-right: 27px;
+	margin-bottom: 20px;
+}
+
+#brands_worked_with .slider_main_con .slick-prev {
+	left: -65px;
+    top: 37%;
+    transform: translate(0, -50%) rotate(270deg);
+	transition: 0.7s;
+	opacity: 0.3;
+}
+
+#brands_worked_with .slider_main_con .slick-prev:hover {
+    opacity: 1;
+}
+
+#brands_worked_with .slider_main_con .slick-next {
+	left: -65px;
+    top: 55%;
+    transform: translate(0, -50%) rotate(90deg);
+	opacity: 0.3;
+	transition: 0.7s;
+}
+
+
+#brands_worked_with .slider_main_con .slick-next:hover {
+	opacity: 1;
+}
+
+#home_testimonials {
+	padding-top: 219px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 100% 78%;
+	overflow: hidden;
+}
+
+#home_testimonials .content_con h6 {
+	text-align: center;
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	margin: auto;
+	margin-bottom: 52px;
+	color: #fff;
+	max-width: 270px;
+}
+
+#home_testimonials .testimonial_slider_con .box_con {
+	transition: 0.7s;
+	background-color: #3D3D3D;
+	margin-left: 22px;
+	margin-right: 22px;
+	padding-top: 45px;
+	padding-left: 53.4px;
+	padding-right: 48.6px;
+	padding-bottom: 47.5px;
+}
+
+#home_testimonials .testimonial_slider_con .box_con .content {
+	transition: 0.7s;
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	line-height: 26px;
+	margin-bottom: 23.5px;
+}
+
+#home_testimonials .testimonial_slider_con .box_con .bottom_con {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#home_testimonials .testimonial_slider_con .box_con .bottom_con .left h6 {
+	font-family: 'Avenir Medium';
+	color: #fff;
+	margin-bottom: 0px;
+}
+
+#home_testimonials .testimonial_slider_con .box_con .bottom_con .left p {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+	font-size: 16px;
+	margin-bottom: 0px;
+}
+
+#home_testimonials .testimonial_slider_con .box_con .bottom_con .right img {
+	opacity: 0.2;
+	transition: 0.7s;
+}
+
+#home_testimonials .testimonial_slider_con .slick-current {
+	background-color: #1B1B1B;
+}
+
+#home_testimonials .testimonial_slider_con .slick-current .content {
+	color: #fff;
+}
+
+#home_testimonials .testimonial_slider_con .slick-current img {
+	opacity: 1 !important;
+}
+
+#home_testimonials .testimonial_slider_con .slick-prev {
+	left: -25px;
+    top: -105px;
+    width: 60px;
+    height: 60px;
+	transition: 0.7s;
+}
+
+#home_testimonials .testimonial_slider_con .slick-prev:hover {
+	transform: scale(1.07) translate(0, -50%);
+}
+
+#home_testimonials .testimonial_slider_con .slick-next {
+	right: -25px;
+    top: -105px;
+    width: 60px;
+    height: 60px;
+	transition: 0.7s;
+}
+
+#home_testimonials .testimonial_slider_con .slick-next:hover {
+	transform: scale(1.07) translate(0, -50%);
+}
+
+#home_latest_news {
+	padding-top: 70px;
+	padding-bottom: 26px;
+}
+
+#home_latest_news .top_con {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 44px;
+}
+
+#home_latest_news .top_con .left h6 {
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	margin-bottom: 0px;
+}
+
+#home_latest_news .top_con .left .grey_line {
+	background-color: #7A7A7B;
+	width: 158px;
+	height: 2px;
+}
+
+#home_latest_news .top_con .right {
+	display: flex;
+}
+
+#home_latest_news .top_con .right .btnn__white {
+	display: flex;
+	align-items: center;
+}
+
+.blog_box_con {
+	transition: 0.7s;
+	margin-bottom: 40px;
+}
+
+.blog_box_con img {
+	width: 100%;
+}
+
+.blog_box_con .bottom {
+	padding-top: 28px;
+	padding-left: 48px;
+	padding-right: 48px;
+	padding-bottom: 41px;
+	transition: 0.7s;
+}
+
+.blog_box_con .bottom .date {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+	margin-bottom: 11px;
+	font-size: 18px;
+	display: block;
+}
+
+.blog_box_con .bottom .title {
+	color: #000000;
+	font-family: 'Avenir Regular';
+	font-size: 22px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+
+.blog_box_con .bottom p {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	margin-bottom: 28px;
+}
+
+.blog_box_con .bottom .btnn__white {
+	border: none;
+	padding-left: 25px;
+}
+
+.blog_box_con .bottom .btnn__white:before {
+	left: 0;
+	transform: translate(-0%, -50%);
+}
+
+.blog_box_con .bottom .btnn__white:hover:before {
+	left: 0;
+	transform: translate(-0%, -50%);
+}
+
+.blog_box_con .bottom .btnn__white:after {
+	display: none;
+}
+
+.blog_box_con .bottom .btnn__white:hover {
+	color: #000;
+}
+
+.blog_box_con .bottom .btnn__white:hover:before {
+	background-image: url(../../../wp-content/themes/nasiol-nz/assets/img/Group\ 4601.svg);
+}
+
+.blog_box_con .img_con {
+	overflow: hidden;
+}
+
+.blog_box_con .img_con img {
+	transition: 0.7s;
+}
+
+.blog_box_con:hover img {
+	transform: scale(1.1);
+}
+
+.blog_box_con:hover .bottom {
+	background-color: #F1F1F1;
+}
+/* HOMEPAGE END */
+
+
+/* ABOUT US START */
+#uni_banner {
+	padding-top: 355px;
+	padding-bottom: 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 85%)
+}
+
+#uni_banner .content_con {
+	display: flex;
+	justify-content: space-between;
+}
+
+#uni_banner .content_con .left h1 {
+	font-family: 'Avenir Black';
+	font-size: 52px;
+	color: #fff;
+}
+
+#uni_banner .content_con .left .title {
+	font-family: 'Avenir Black';
+	font-size: 52px;
+	color: #fff;
+}
+
+#uni_banner .content_con .right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#uni_banner .content_con .right span {
+	color: #fff;
+    font-family: 'Avenir Medium';
+    font-size: 17px;
+    margin-right: 6px;
+	line-height: normal;
+}
+
+#uni_banner .content_con .right .dash {
+	width: 12px;
+    height: 1px;
+    background-color: #fff;
+}
+
+#uni_banner .content_con .right a {
+	display: flex;
+    margin-left: 9.7px;
+}
+
+#uni_banner .content_con .right a img {
+	transition: 0.7s;
+}
+
+#uni_banner .content_con .right a img:hover {
+	transform: scale(1.3);
+}
+
+#expert_and_value {
+	padding-bottom: 82px;
+}
+
+#expert_and_value .left_con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#expert_and_value .left_con h6 {
+	font-family: 'Avenir Black';
+    color: #000;
+    font-size: 47px;
+    margin-bottom: 28px;
+}
+
+#expert_and_value .left_con .content {
+	color: #7A7A7A;
+    font-family: 'Avenir Regular';
+	padding-right: 50px;
+}
+
+#expert_and_value .left_con .content p {
+	color: #7A7A7A;
+    font-family: 'Avenir Regular';
+	font-size: 17px;
+}
+
+#expert_and_value .right_con {
+	height: 100%;
+	display: flex;
+	align-content: center;
+}
+
+#expert_and_value .right_con img {
+	width: 100%;
+}
+/* ABOUT US END */
+
+
+/* BLOG DETAILS */
+#blog_details {
+	padding-top: 87px;
+	padding-bottom: 80px;
+}
+
+#blog_details .left_con {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+#blog_details .left_con img {
+	width: 100%;
+}
+
+#blog_details .col-sm-12:first-child {
+	padding-right: 30px;
+}
+
+#blog_details .container .row:first-child {
+	margin-bottom: 50px;
+}
+
+#blog_details .col-sm-12:last-child {
+	padding-left: 30px;
+}
+
+#blog_details .right_con {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+}
+
+#blog_details .right_con h5 {
+	font-family: 'Avenir Regular';
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 4px;
+}
+
+#blog_details .right_con h6 {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+	font-size: 18px;
+	margin-bottom: 14px;
+}
+
+#blog_details .right_con .content {
+	color: #7A7A7B;
+	font-family: 'Avenir Regular';
+}
+
+#blog_details .right_con .content p {
+	font-size: 17px;
+}
+
+#blog_details .below_content {
+	font-family: 'Avenir Regular';
+}
+
+#blog_details .below_content p {
+	font-size: 17px;
+	color: #7A7A7B;
+}
+
+#comment_sec .comment_form h3 {
+	font-family: 'Avenir Regular';
+	font-size: 24px;
+	color: #000;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+#comment_sec .comment_form .comment-notes {
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	text-align: center;
+}
+
+#comment_sec .comment_form label {
+	font-family: 'Avenir Light';
+	font-size: 17px;
+	color: #7A7A7B;
+}
+
+#comment_sec .comment_form input {
+	width: 100%;
+	padding: 18px 26px;
+	border-radius: 0px;
+	outline: none;
+	font-family: 'Avenir Light';
+	font-size: 16px;
+}
+
+#comment_sec .comment_form textarea {
+	width: 100%;
+	padding: 18px 26px;
+	border-radius: 0px;
+	outline: none;
+	font-family: 'Avenir Light';
+	font-size: 16px;
+}
+
+#comment_sec .comment_form .comment-form-url {
+	display: none;
+}
+
+#comment_sec .comment_form .form-submit {
+	text-align: center;
+}
+
+#comment_sec .comment_form input[type="submit"] {
+	padding: 14px 53px;
+	background-color: #3D3D3D;
+	transition: 0.7s;
+	color: #fff;
+	width: fit-content;
+	margin: auto;
+}
+
+#comment_sec .comment_form input[type="submit"]:hover {
+	background-color: #000;
+}
+
+#comment_sec .comment_form .logged-in-as {
+	text-align: center;
+}
+
+#comment_sec .comment_form .logged-in-as a {
+	text-align: center;
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	color: #7A7A7B;
+}
+
+#comment_sec .comment_form .logged-in-as a:hover {
+	color: #000;
+}
+
+#testimonials {
+	padding-top: 87px;
+	padding-bottom: 50px;
+}
+
+#testimonials .box_con {
+	transition: 0.7s;
+    background-color: #3D3D3D;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 45px;
+    padding-left: 53.4px;
+    padding-right: 48.6px;
+    padding-bottom: 47.5px;
+	margin-bottom: 40px;
+}
+
+#testimonials .box_con .content {
+	transition: 0.7s;
+    color: #7A7A7A;
+    font-family: 'Avenir Regular';
+    font-size: 17px;
+    line-height: 26px;
+    margin-bottom: 23.5px;
+}
+
+#testimonials .box_con .bottom_con {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#testimonials .box_con .bottom_con h6 {
+	font-family: 'Avenir Medium';
+    color: #fff;
+    margin-bottom: 0px;
+}
+
+#testimonials .box_con .bottom_con .left p {
+	color: #7A7A7B;
+    font-family: 'Avenir Regular';
+    font-size: 16px;
+    margin-bottom: 0px;
+}
+
+#testimonials .box_con .bottom_con .right img {
+	opacity: 0.1;
+    transition: 0.7s;
+}
+
+#testimonials .box_con:hover {
+	background-color: #1B1B1B;
+	cursor: pointer;
+}
+
+#testimonials .box_con:hover .content {
+	color: #fff;
+}
+
+#testimonials .box_con:hover .bottom_con .right img {
+	opacity: 1 !important;
+}
+/* BLOG DETAILS END */
+
+/* CONTACT US */
+#contact_form {
+	padding-top: 89px;
+	padding-bottom: 116px;
+}
+
+#contact_form .content_con h6 {
+	font-size: 24px;
+	font-family: 'Avenir Regular';
+	color: #000;
+	text-align: center;
+	max-width: 744px;
+	margin: auto;
+	margin-bottom: 47px;
+}
+
+#contact_form .form_con input {
+	padding: 18px 26px;
+	background-color: transparent;
+	border: 1px solid #D9D9D9;
+	border-radius: 0px;
+	transition: 0.7s;
+	width: 100%;
+	margin-bottom: 20px;
+	font-family: 'Avenir Light';
+	font-size: 16px;
+	color: #222327;
+	outline: none;
+}
+
+#contact_form .form_con input:focus {
+	border-color: #222327;
+}
+
+#contact_form .form_con textarea {
+	padding: 18px 26px;
+	background-color: transparent;
+	border: 1px solid #D9D9D9;
+	border-radius: 0px;
+	transition: 0.7s;
+	width: 100%;
+	margin-bottom: 41px;
+	font-family: 'Avenir Light';
+	font-size: 16px;
+	color: #222327;
+	outline: none;
+}
+
+#contact_form .form_con textarea:focus {
+	border-color: #222327;
+}
+
+#contact_form .form_con .wpcf7-not-valid {
+	margin-bottom: 8px;
+	border-color: #dc3232;
+}
+
+#contact_form .form_con .wpcf7-not-valid-tip {
+	font-size: 12px;
+	font-family: 'Avenir Light';
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+#contact_form .form_con .wpcf7-response-output {
+	margin-top: 20px;
+	text-align: center;
+}
+
+#contact_form .form_con input[type="submit"] {
+	padding: 14px 53px;
+	background-color: #3D3D3D;
+	color: #fff;
+	font-family: 'Avenir Light';
+	font-size: 16px;
+	transition: 0.7s;
+	width: fit-content;
+	margin: auto;
+}
+
+#contact_form .form_con input[type="submit"]:hover {
+	background-color: #000;
+}
+
+#contact_details {
+	padding-bottom: 94px;
+}
+
+#contact_details .container {
+	background-size: 60% 80%;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+
+#contact_details .container .left_con {
+	margin-top: 55px;
+}
+
+#contact_details .container .left_con iframe {
+	width: 100%;
+	padding-right: 24px;
+}
+
+#contact_details .container .right_con {
+	padding-top: 101px;
+}
+
+#contact_details .container .right_con h6 {
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	color: #fff;
+	margin-bottom: 32px;
+}
+
+#contact_details .container .right_con .location {
+	font-family: 'Avenir Regular';
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 33px;
+	max-width: 287px;
+}
+
+#contact_details .container .right_con .phone {
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 33px;
+	display: block;
+}
+
+#contact_details .container .right_con .phone:hover {
+	color: #000;
+}
+
+#contact_details .container .right_con .email {
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 33px;
+	display: block;
+}
+
+#contact_details .container .right_con .email:hover {
+	color: #000;
+}
+/* CONTACT US END */
+
+/* SHOP PAGE */
+.woocommerce-shop ul.products {
+	/* overflow: hidden; */
+}
+
+#woocommerce_products {
+	padding-top: 119px;
+	padding-bottom: 10px;
+}
+
+#woocommerce_products .title_con {
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+#woocommerce_products .title_con h6 {
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	color: #000;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+#woocommerce_products .title_con .grey_line {
+	width: 158px;
+	height: 2px;
+	background-color: #7A7A7B;
+	margin: auto;
+	margin-bottom: 34px;
+}
+
+#woocommerce_products .title_con p {
+	max-width: 612px;
+	margin: auto;
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+}
+
+#woocommerce_products ul li a {
+	transition: 0.7s;
+}
+
+#woocommerce_products ul li {
+	transition: 0.7s;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+#woocommerce_products ul li a .img_con {
+	transition: 0.7s;
+	background-color: #F3F3F3;
+	margin-bottom: 35px;
+}
+
+#woocommerce_products ul li a .img_con img {
+	margin: auto;
+	transition: 0.7s;
+	height: 348px;
+	object-fit: contain;
+}
+
+#woocommerce_products ul li a .woocommerce-loop-product__title {
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-bottom: 9px;
+	color: #202426;
+	font-family: 'Avenir Heavy';
+	font-size: 22px;
+	transition: 0.7s;
+}
+
+#woocommerce_products ul li a p {
+	transition: 0.7s;
+	padding-left: 40px;
+	padding-right: 40px;
+	font-family: 'Avenir Regular';
+	font-size: 17px;
+	color: #7A7A7A;
+	margin-bottom: 72px;
+}
+
+#woocommerce_products ul li a .price {
+	display: none;
+}
+
+#woocommerce_products ul li .add_to_cart_button  {
+	display: none;
+}
+
+#woocommerce_products ul li .btnn__black {
+	position: absolute;
+    right: -8px;
+    bottom: -80px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.7s;
+}
+
+#woocommerce_products ul li:hover {
+	background-color: #1B1B1B;
+}
+
+#woocommerce_products ul li:hover a .img_con {
+	background-color: #1B1B1B;
+}
+
+#woocommerce_products ul li:hover a .img_con img {
+	transform: scale(1.2) translateY(-30px);
+}
+
+#woocommerce_products ul li:hover a .woocommerce-loop-product__title {
+	color: #fff;
+	transform: translateY(-30px);
+}
+
+#woocommerce_products ul li:hover a p {
+	color: #fff;
+	transform: translateY(-30px);
+}
+
+#woocommerce_products ul li:hover .btnn__black {
+	bottom: -24px;
+	opacity: 1;
+	visibility: visible;
+}
+
+#woocommerce_products ul li .product_type_simple {
+	display: none;
+}
+
+.lmp_products_loading, .lmp_load_more_button {
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.lmp_products_loading, .lmp_load_more_button a {
+	transition: 0.7s;
+	font-family: 'Avenir Regular';
+}
+/* SHOP PAGE END */
+
+
+/* SINGLE PRODUCT PAGE */
+#single_product {
+	padding-top: 139px;
+}
+
+#single_product .woocommerce-notices-wrapper {
+	margin-bottom: 30px;
+}
+
+#single_product .woocommerce-product-gallery {
+	width: 100%;
+	height: 100%;
+	background-color: #1B1B1B;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+#single_product .entry-summary {
+	padding-left: 45px;
+	margin-top: 0px;
+}
+
+#single_product .entry-summary h1 {
+	margin-bottom: 6px;
+	color: #000000;
+	font-family: 'Avenir Black';
+	font-size: 47px;
+}
+
+#single_product .entry-summary .grey_line {
+	background-color: #7A7A7B;
+	width: 158px;
+	height: 2px;
+	margin-bottom: 16px;
+}
+
+#single_product .entry-summary h6 {
+	font-family: 'Avenir Regular';
+	color: #000;
+	font-size: 24px;
+	margin-bottom: 16px;
+}
+
+#single_product .entry-summary .price span {
+	font-family: 'Avenir Regular';
+	color: #000;
+	font-size: 30px;
+	margin-bottom: 27px;
+}
+
+#single_product .entry-summary .woocommerce-product-details__short-description {
+	font-family: 'Avenir Regular';
+	color: #7A7A7A;
+	font-size: 17px;
+}
+
+#single_product .entry-summary .quantity {
+	display: inline-block;
+	margin-top: 20px;
+}
+
+#single_product .entry-summary .quantity input {
+	display: inline-block;
+	outline: none;
+	width: 100px;
+}
+
+#single_product .qib-button.qib-button-wrapper {
+	float: unset;
+}
+
+#single_product .entry-summary .quantity_label {
+	font-family: 'Avenir Regular';
+	font-size: 24px;
+	color: #000;
+	margin-right: 33px;
+}
+
+#single_product .entry-summary .btnn__black {
+	display: block !important;
+	margin-top: 50px;
+	margin-bottom: 16px;
+}
+
+#single_product .entry-summary .product_meta .tagged_as {
+	display: none;
+}
+
+#single_product .entry-summary .product_meta .posted_in {
+	font-family: 'Avenir Regular';
+	font-size: 18px;
+	color: #000;
+}
+
+#single_product .container .container {
+	padding: 0px;
+}
+
+#single_product .entry-summary .product_meta .posted_in a {
+	transition: 0.7s;
+	font-size: 16px;
+	margin-left: 10px;
+	color: #7A7A7A;
+}
+
+#single_product .entry-summary .product_meta .posted_in a:hover {
+	transition: 0.7s;
+	font-size: 16px;
+	margin-left: 10px;
+	color: #000;
+}
+
+#single_product .related h2 {
+	margin-top: 82px;
+	font-family: 'Avenir Black';
+	font-size: 47px;
+	color: #000;
+}
+
+.single-product #woocommerce_products {
+	padding-top: 0px;
+}
+
+.single-product #woocommerce_products .grey_line {
+	margin: unset;
+}
+
+#single_product .woocommerce-message {
+	padding: 15px;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: 'Avenir Book';
+	font-size: 20px;
+	color: #fff;
+	background-color: #1B1B1B;
+}
+
+#single_product .woocommerce-message a {
+	transition: 0.7s;
+	margin-right: 30px;
+	text-transform: uppercase;
+	color: #7A7A7A;
+	font-family: 'Avenir Regular';
+}
+
+#single_product .woocommerce-message a:hover {
+	color: #000;
+}
+
+#single_product .woocommerce-message a:hover {
+	color: #000;
+}
+/* SINGLE PRODUCT PAGE END */
+
+/* CART */
+#generic_page {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#generic_page .entry-header {
+	display: none;
+}
+
+#generic_page .shop_table th {
+	font-family: 'Avenir Heavy';
+	font-size: 18px;
+	color: #000;
+}
+
+#generic_page .shop_table td {
+	font-family: 'Avenir Regular';
+	font-size: 18px;
+	color: #000;
+}
+
+#generic_page .shop_table .product-remove a {
+	position: relative;
+}
+
+#generic_page .shop_table .product-remove a:hover {
+	color: unset;
+}
+
+#generic_page .shop_table .product-remove a:after {
+	content: '';
+	background-image: url('../../../wp-content/themes/nasiol-nz/assets/img/cross-black-circular-button.svg');
+	width: 17.3px;
+	height: 17.3px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	background-size: contain;
+	z-index: 99;
+	background-repeat: no-repeat;
+}
+
+#generic_page .shop_table td a {
+	color: #7A7A7A;
+	transition: 0.7s;
+}
+
+#generic_page .shop_table .product-thumbnail {
+	text-align: center;
+}
+
+#generic_page .shop_table .product-thumbnail img {
+	padding: 3px 18px;
+	background-color: #F3F3F3;
+	height: 68px;
+	object-fit: contain;
+	width: fit-content;
+	margin: auto;
+}
+
+#generic_page .shop_table td a:hover {
+	color: #000;
+}
+
+#generic_page .shop_table .quantity input {
+	width: 100px;
+	outline: none;
+}
+
+#generic_page .actions .input-text {
+	outline: none;
+	height: 100%;
+	padding: 8px 20px;
+}
+
+#generic_page .actions .coupon {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#generic_page .actions .coupon .button {
+	background-color: #1B1B1B;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	transition: 0.7s;
+	margin-left: 30px;
+}
+
+#generic_page .actions .coupon .button:hover {
+	background-color: #000;
+}
+
+#generic_page .actions .button {
+	background-color: #1B1B1B;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	transition: 0.7s;
+	margin-left: 0px;
+}
+
+#generic_page .actions .button:hover {
+	background-color: #000;
+}
+
+#generic_page .cart-collaterals {
+	width: 40%;
+    margin-left: auto;
+}
+
+#generic_page .cart-collaterals .cart_totals  h2 {
+	font-family: 'Avenir Heavy';
+	font-size: 25px;
+	color: #000;
+	margin-bottom: 18px;
+}
+
+#generic_page .cart-collaterals .cart_totals table {
+	background-color: #F1F1F1;
+}
+
+#generic_page .cart-collaterals .cart_totals table th {
+	padding: 30px 46px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#generic_page .cart-collaterals .cart_totals table td {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#generic_page .wc-proceed-to-checkout {
+	margin-top: 50px;
+}
+
+#generic_page .wc-proceed-to-checkout a {
+	background-color: #1B1B1B;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	transition: 0.7s;
+	margin-left: 0px;
+	padding: 15px 20px;
+}
+
+#generic_page .wc-proceed-to-checkout a:hover {
+	background-color: #000;
+}
+/* CART END */
+
+/* CHECKOUT */
+#primary .woocommerce-info {
+	padding: 20px 30px;
+	font-family: 'Avenir Regular';
+	color: #fff;
+	margin-bottom: 30px;
+	background-color: #1B1B1B;
+}
+
+#primary .woocommerce-info a {
+	transition: 0.7s;
+	margin-left: 30px;
+	color: #7A7A7A;
+}
+
+#primary .woocommerce-info a:hover {
+	color: #000;
+}
+
+#primary .woocommerce-billing-fields h3 {
+	margin-bottom: 21px;
+	font-family: 'Avenir Heavy';
+	margin-bottom: 32px;
+	padding-bottom: 21px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#primary .woocommerce-checkout .col-sm-12:first-child {
+	padding-right: 50px;
+}
+
+#primary .woocommerce-checkout .col-sm-12:last-child {
+	padding-left: 50px;
+}
+
+#primary .woocommerce-checkout .woocommerce-billing-fields__field-wrapper label {
+	display: block;
+	margin-bottom: 10px;
+	font-family: 'Avenir Regular';
+	font-size: 18px;
+}
+
+#primary .woocommerce-checkout .woocommerce-billing-fields__field-wrapper input {
+	width: 100%;
+	padding: 18px 30px;
+	outline: none;
+	transition: 0.7s;
+	border-radius: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.08);
+	font-family: 'Avenir Regular';
+	color: #7A7A7A;
+}
+
+#primary .woocommerce-checkout .woocommerce-billing-fields__field-wrapper input:focus {
+	border-color: #000;
+}
+
+#primary .woocommerce-checkout .select2-container--default .select2-selection--single {
+	border-radius: 0px;
+	border-color: rgba(0, 0, 0, 0.08);
+}
+
+#primary .woocommerce-checkout .select2-container .select2-selection--single {
+	height: 60px;
+}
+
+#primary .woocommerce-checkout .select2-container--default .select2-selection--single .select2-selection__rendered {
+	line-height: 57px;
+	color: #7A7A7A;
+}
+
+#primary .woocommerce-checkout .select2-container .select2-selection--single .select2-selection__rendered {
+	padding-left: 30px;
+}
+
+.select2-dropdown {
+	border-color: rgba(0, 0, 0, 0.08) !important;
+}
+
+.woocommerce-additional-fields {
+	margin-top: 50px;
+}
+
+.woocommerce-additional-fields h3 {
+	font-family: 'Avenir Heavy';
+	font-size: 26px;
+}
+
+.woocommerce-additional-fields p label {
+    margin-bottom: 10px;
+    font-family: 'Avenir Regular';
+    font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.woocommerce-additional-fields textarea {
+	height: 150px;
+	padding: 20px 30px;
+	outline: none;
+	border-radius: 0px;
+	border-color: rgba(0, 0, 0, 0.08);
+}
+
+#order_review_heading {
+	margin-bottom: 21px;
+    font-family: 'Avenir Heavy';
+    margin-bottom: 32px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review {
+	background-color: #F1F1F1;
+}
+
+#order_review th {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review td {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review .cart_item td {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review .cart-subtotal td {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review .order-total td {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+#order_review .woocommerce-privacy-policy-text p {
+	padding: 20px 46px;
+	font-family: 'Avenir Regular';
+	color: #000;
+	text-align: left;
+}
+
+#order_review #payment {
+	text-align: center;
+}
+
+#order_review #payment button {
+    background-color: #1B1B1B;
+    font-family: 'Avenir Regular';
+    color: #fff;
+    transition: 0.7s;
+    margin-left: 0px;
+    padding: 15px 40px;
+	margin-bottom: 50px;
+}
+
+#order_review #payment button:hover {
+	background-color: #000;
+}
+
+.woocommerce-checkout ul {
+	margin: 0px;
+	list-style: none;
+	padding: 20px 30px;
+	margin-bottom: 30px;
+	padding-bottom: 10px;
+}
+
+.woocommerce-checkout ul li {
+	font-family: 'Avenir Regular';
+	color: #000;
+	margin-bottom: 10px;
+}
+
+.woocommerce-checkout ul li strong {
+	font-family: 'Avenir Heavy';
+	color: #000;
+}
+
+.woocommerce-order .woocommerce-notice {
+	font-size: 30px;
+}
+
+.woocommerce-order-details .woocommerce-order-details__title {
+	font-family: 'Avenir Heavy';
+    margin-bottom: 32px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.woocommerce-order-details table th {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	background-color: #F1F1F1;
+}
+
+.woocommerce-order-details table td {
+	padding: 30px 46px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	background-color: #F1F1F1;
+}
+
+.woocommerce-customer-details .woocommerce-column__title {
+	font-family: 'Avenir Heavy';
+    margin-bottom: 32px;
+    padding-bottom: 21px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+	margin-top: 50px;
+}
+
+.woocommerce-customer-details address {
+	font-family: 'Avenir Regular';
+}
+
+#navigation-main {
+	margin-bottom: 0px;
+}
+/* CHECKOUT END */
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1000px) {
+	#home_banner {
+		padding-top: 300px;
+	}
+	#home_banner .left_con h6 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	#home_banner .left_con h1 {
+		font-size: 30px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	#home_banner .left_con .bottom_con {
+		flex-direction: column;
+	}
+
+	#home_banner .left_con .bottom_con .btnn {
+		margin-right: 0px;
+		margin-bottom: 30px;
+		display: flex;
+	}
+
+	#home_banner .left_con .bottom_con .right {
+		margin-bottom: 50px;
+	}
+
+	#home_banner .right_con img {
+		max-height: 400px;
+	}
+
+	#about_us .col-sm-12:first-child {
+		padding-right: 12px;
+	}
+
+	#about_us .col-sm-12:last-child {
+		padding-left: 12px;
+	}
+
+	#about_us .left_con .top_left {
+		width: 85%;
+	}
+
+	#about_us .left_con .bottom_right {
+		width: 85%;
+	}
+
+	#about_us .left_con {
+		margin-bottom: 50px;
+	}
+
+	#about_us {
+		padding-bottom: 80px;
+	}
+
+	#area_of_expertise .container .container {
+		padding: 0px;
+	}
+
+	#area_of_expertise .left_box {
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 50px;
+	}
+
+	#area_of_expertise .right_box {
+		padding-left: 12px;
+		padding-right: 12px;
+		padding-top: 50px;
+	}
+
+	.padding_top_0 {
+		padding-top: 50px !important;
+	}
+
+	#three_col_sec {
+		padding-top: 80px;
+	}
+
+	#three_col_sec .box_con {
+		cursor: pointer;
+		height: 100%;
+		box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 36%);
+	}
+
+	#three_col_sec .box_con h6 {
+		transform: translateY(30px);
+	}
+
+	#three_col_sec .box_con .btnn {
+		transform: translateY(40px);
+		opacity: 1;
+		visibility: visible;
+	}
+
+	#catalogs .tabs_con {
+		padding-left: 25px;
+		padding-right: 25px;
+		padding-top: 50px;
+		padding-bottom: 70px;
+	}
+
+	#brands_worked_with .left_con h6 {
+		font-size: 30px;
+		margin-bottom: 30px;
+		text-align: center;
+		max-width: 100%;
+	}
+
+	#home_testimonials {
+		background-size: cover;
+		padding-top: 150px;
+		padding-bottom: 50px;
+		background-attachment: fixed;
+	}
+
+	#home_testimonials .content_con h6 {
+		margin-bottom: 100px;
+	}
+
+	#home_testimonials .testimonial_slider_con .slick-prev {
+		left: 100px;
+		top: -56px;
+	}
+
+	#home_testimonials .testimonial_slider_con .slick-next {
+		right: 100px;
+		top: -56px;
+	}
+
+	#home_latest_news .top_con {
+		flex-direction: column;
+	}
+
+	#home_latest_news .top_con .left {
+		margin-bottom: 30px;
+	}
+
+	#colophon .left_con_top h6 {
+		font-size: 30px;
+		line-height: normal;
+		margin-bottom: 30px;
+	}
+
+	#colophon .column_1 img {
+		width: unset;
+		margin-bottom: 30px;
+	}
+
+	#colophon .column_2 {
+		justify-content: flex-start;
+		margin-bottom: 30px;
+	}
+
+	#footer_bar .content_con {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#footer_bar .content_con .left_con {
+		margin-bottom: 20px;
+	}
+
+	#uni_banner .content_con {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#woocommerce_products {
+		padding-top: 80px;
+	}
+
+	#woocommerce_products .title_con {
+		margin-bottom: 100px;
+	}
+
+	#woocommerce_products ul li {
+		background-color: #1B1B1B;
+		margin-bottom: 100px;
+	}
+
+	#woocommerce_products ul li a .img_con {
+		background-color: #1B1B1B;
+	}
+
+	#woocommerce_products ul li a .img_con img {
+		transform: scale(1.1) translateY(-30px);
+	}
+
+	#woocommerce_products ul li a .woocommerce-loop-product__title {
+		color: #fff;
+		transform: translateY(-30px);
+	}
+
+	#woocommerce_products ul li a p {
+		color: #fff;
+		transform: translateY(-30px);
+	}
+
+	#woocommerce_products ul li .btnn__black {
+		bottom: -24px;
+		opacity: 1;
+		visibility: visible;
+		right: 0;
+	}
+
+	#woocommerce_products ul li a p {
+		margin-bottom: 0px;
+		padding-bottom: 72px;
+	}
+
+	#single_product {
+		padding-top: 80px;
+	}
+	
+	#single_product .entry-summary {
+		padding-left: 0px;
+		padding-top: 30px;
+	}
+
+	#single_product .entry-summary h1 {
+		font-size: 40px;
+	}
+
+	#single_product .related h2 {
+		font-size: 40px;
+	}
+
+	#generic_page {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	#generic_page .cart-collaterals {
+		width: 100%;
+	}
+
+	#generic_page .actions .coupon {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	#primary .woocommerce-checkout .col-sm-12:last-child {
+		padding-left: 12px;
+	}
+
+	#primary .woocommerce-checkout .col-sm-12:first-child {
+		padding-right: 12px;
+	}
+
+	#about_us .right_con .content {
+		margin-bottom: 0px;
+	}
+
+	#expert_and_value .left_con .content {
+		padding-right: 0px;
+	}
+
+	.alm-listing {
+		justify-content: center;
+	}
+
+	.blog_box_con .bottom {
+		background-color: #F1F1F1;
+	}
+
+	#blog_details .col-sm-12:first-child {
+		padding-right: 12px;
+	}
+	
+	#blog_details .col-sm-12:last-child {
+		padding-left: 12px;
+	}
+
+	#blog_details .left_con {
+		padding-bottom: 30px;
+	}
+
+	#blog_details .container .row:first-child {
+		margin-bottom: 30px;
+	}
+
+	#testimonials {
+		padding-bottom: 0px;
+	}
+
+	#contact_form {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	#contact_form .content_con h6 {
+		margin-bottom: 30px;
+	}
+
+	#contact_details .container {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	#contact_details .container .left_con iframe {
+		padding-right: 0px;
+	}
+
+	#contact_details .container .right_con {
+		padding-top: 50px;
+		padding-bottom: 50px;
+	}
+
+	#contact_details .container .right_con h6 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	#contact_details .container .right_con .location {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	#contact_details .container .right_con .phone {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	#contact_details .container .right_con .email {
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+
+	#contact_details {
+		padding-bottom: 0px;
+	}
+}
+/* RESPONSIVENESS END */
+
+
+
+#colophon .wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+	color: #fff;
+}
+
+.woocommerce-message, .woocommerce-info, .woocommerce-error, .woocommerce-noreviews, p.no-comments {
+	padding: 20px 30px;
+    font-family: 'Avenir Regular';
+    color: #fff;
+	background-color: #1B1B1B;
+}
+
+#customer_login .col-sm-12 h2 {
+	font-family: 'Avenir Heavy';
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #7a7a7a;
+    width: fit-content;
+}
+
+#customer_login .col-sm-12 form label {
+	display: block;
+	font-family: 'Avenir Regular';
+	margin-bottom: 10px;
+}
+
+#customer_login .col-sm-12 form input {
+	width: 100%;
+    padding: 18px 30px;
+    outline: none;
+    transition: 0.7s;
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    font-family: 'Avenir Regular';
+    color: #7A7A7A;
+}
+
+#customer_login .col-sm-12 form input:focus {
+	border-color: #000;
+}
+
+#customer_login .col-sm-12 form p {
+	font-family: 'Avenir Regular';
+    color: #7A7A7A;
+}
+
+#customer_login .col-sm-12 form button {
+	background-color: #1B1B1B;
+    font-family: 'Avenir Regular';
+    color: #fff;
+    transition: 0.7s;
+    margin-left: 0px;
+    padding: 15px 40px;
+    margin-bottom: 50px;
+}
+
+#customer_login .col-sm-12 form button:hover {
+	background-color: #000;
+}
+
+#customer_login .col-sm-12 form #rememberme {
+	width: unset;
+}
+
+#customer_login .col-sm-12 form p a {
+	transition: 0.7s;
+	color: #7A7A7A;
+	border-bottom: 1px solid #7A7A7A;
+}
+
+#customer_login .col-sm-12 form p a:hover {
+	color: #1B1B1B;
+}
+
+.btnn__left {
+	background: #3D3D3D;
+    line-height: normal;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    transition: 0.7s;
+	display: block;
+    width: fit-content;
+}
+
+.btnn__left:hover {
+	background-color: #000;
+	color: #7A7A7A;
+}
+
+.btnn__left:focus {
+	color: #7A7A7A;
+}
+
+.btnn__left:active {
+	color: #7A7A7A;
+}
+
+#woocommerce_products ul li .btnn__left {
+	transform: translateX(-181px);
+	visibility: hidden;
+	opacity: 0;
+}
+
+#woocommerce_products ul li:hover .btnn__left {
+	background-color: #3D3D3D;
+	transform: translateX(0px);
+	visibility: visible;
+	opacity: 1;
+	color: #fff;
+}
+
+.wpcf7-response-output {
+	background: #000;
+	font-family: 'Avenir Regular';
+	border: none !important;
+	padding-top: 16px !important;
+	padding-bottom: 16px !important;
+	color: #fff;
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Group_4648" data-name="Group 4648" transform="translate(-346 -519)">
+    <path id="right-arrow_1_" data-name="right-arrow (1)" d="M17.336,4.946a.913.913,0,0,0-1.3,1.284l6.579,6.579H.908A.9.9,0,0,0,0,13.719a.914.914,0,0,0,.908.921h21.71l-6.579,6.567a.931.931,0,0,0,0,1.3.909.909,0,0,0,1.3,0l8.136-8.136a.894.894,0,0,0,0-1.284Z" transform="translate(383.777 530) rotate(90)" fill="#fff"/>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(346 519)" fill="none" stroke="#fff" stroke-width="1">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="23.5" fill="none"/>
+    </g>
+  </g>
+</svg>
